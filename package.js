@@ -1,7 +1,7 @@
 
 Package.describe({
   summary: "A simple tool to define/require modules with dependencies",
-  version: "0.10.1",
+  version: "0.10.2",
   name: "termina1:define",
   git: "https://github.com/apendua/require.git"
 });
