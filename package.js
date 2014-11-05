@@ -2,7 +2,7 @@
 Package.describe({
   summary: "A simple tool to define/require modules with dependencies",
   version: "0.10.0",
-  name: "mrt:define",
+  name: "termina1:define",
   git: "https://github.com/apendua/require.git"
 });
 
@@ -12,7 +12,7 @@ Package.on_use(function (api) {
   }
 
   api.use(['deps', 'underscore', 'amd:manager@0.0.5'], ['client', 'server']);
-  
+
   api.add_files([
 
     'require.js',
