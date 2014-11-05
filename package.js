@@ -20,8 +20,8 @@ Package.on_use(function (api) {
   ], ['client', 'server']);
 
   if (api.export !== undefined) {
-    api.export('define', ['client', 'server']);
-    api.export('require', ['client', 'server']);
+    api.export('mdefine', ['client', 'server']);
+    api.export('mrequire', ['client', 'server']);
   }
 });
 
