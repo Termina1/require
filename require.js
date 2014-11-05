@@ -47,7 +47,7 @@ mrequire = function (listOrName, body) {
   throw new Error('Wrong parameters for require.');
 }
 
-require.onModuleNotFound = manager.onModuleNotFound;
+mrequire.onModuleNotFound = manager.onModuleNotFound;
 
 mdefine = function (name, deps, body) {
   if (arguments.length == 2) {
@@ -56,5 +56,5 @@ mdefine = function (name, deps, body) {
   manager.define(name, deps, body);
 }
 
-define.onModuleNotFound = manager.onModuleNotFound;
-define.amd = true;
+mdefine.onModuleNotFound = manager.onModuleNotFound;
+mdefine.amd = true;
