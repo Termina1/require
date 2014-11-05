@@ -11,7 +11,7 @@ var manager      = new AMDManager(),
 // (reactively) the data associated to the module. Otherwise,
 // we return a handle with ready method which acts
 // as a reactive data source (similar to subscription).
-require = function (listOrName, body) {
+mrequire = function (listOrName, body) {
   var readyDep, isReady;
   if (_.isFunction(body)) {
     if (!_.isArray(listOrName)) {
@@ -49,7 +49,7 @@ require = function (listOrName, body) {
 
 require.onModuleNotFound = manager.onModuleNotFound;
 
-define = function (name, deps, body) {
+mdefine = function (name, deps, body) {
   if (arguments.length == 2) {
     body = deps; deps = [];
   }
