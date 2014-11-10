@@ -57,4 +57,3 @@ mdefine = function (name, deps, body) {
 }
 
 mdefine.onModuleNotFound = manager.onModuleNotFound;
-mdefine.amd = true;
